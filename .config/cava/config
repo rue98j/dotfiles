@@ -1,0 +1,50 @@
+## Cava Configuration File
+
+[general]
+# Framerate: 60 is smooth for most screens.
+framerate = 60
+# Sensitivity: Higher means the bars react more to quiet sounds.
+sensitivity = 100
+# Autosens: Automatically adjust sensitivity (1 = on, 0 = off)
+autosens = 1
+# Bars: Number of bars (0 = auto-detect width)
+bars = 0
+# Bar width in characters
+bar_width = 2
+# Bar spacing in characters
+bar_spacing = 1
+
+[input]
+# Method: 'pulse' works best for Arch/PipeWire/Hyprland
+method = pulse
+source = auto
+
+[output]
+# Style: stereo, mono, average
+channels = stereo
+# Alacritty/Kitty users: 'ncurses' is usually the standard output
+method = ncurses
+
+[color]
+# Background: 'default' uses your terminal's transparency settings!
+background = 'default'
+
+# Gradient mode: 1 = on
+gradient = 1
+gradient_count = 6
+
+# Dracula Theme Gradient (Cyan -> Purple -> Pink -> Red -> Yellow)
+gradient_color_1 = '#8be9fd'
+gradient_color_2 = '#9aedfe'
+gradient_color_3 = '#bd93f9'
+gradient_color_4 = '#ff79c6'
+gradient_color_5 = '#ff5555'
+gradient_color_6 = '#f1fa8c'
+
+[smoothing]
+# Integral: 0 - 100. Higher values make the movement "heavier" and smoother.
+integral = 77
+# Monster: Makes the bass spread out more (looks cool).
+monstercat = 1
+# Waves: 1 = Enable "wave" effect on the bars.
+waves = 0

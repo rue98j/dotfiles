@@ -1,0 +1,41 @@
+/* General Window Styling */
+window {
+    margin: 0px;
+    border: 2px solid #bd93f9; /* Dracula Purple Border */
+    background-color: rgba(40, 42, 54, 0.9); /* Dark background with transparency */
+    border-radius: 10px;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 16px;
+}
+
+/* The Search Bar */
+#input {
+    margin: 5px;
+    border: none;
+    color: #f8f8f2;
+    background-color: #44475a; /* Slightly lighter gray */
+    border-radius: 5px;
+}
+
+/* The Inner Box holding the list */
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+/* Individual Entries (Apps) */
+#entry {
+    margin: 5px;
+    border: none;
+    background-color: transparent;
+    color: #f8f8f2;
+}
+
+/* The Selected Entry */
+#entry:selected {
+    background-color: #bd93f9; /* Dracula Purple Highlight */
+    color: #282a36; /* Dark text on selection for contrast */
+    border-radius: 5px;
+    font-weight: bold;
+}

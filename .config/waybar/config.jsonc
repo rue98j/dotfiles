@@ -78,7 +78,7 @@
 
     "custom/power": {
         "format": "⏻",
-        "on-click": "wlogout",
+        "on-click": "uwsm-app -- wlogout",
         "tooltip": false
     }
 }
