@@ -1,0 +1,88 @@
+/* --- GLOBAL STYLES --- */
+* {
+    font-family: "JetBrainsMono Nerd Font", "Noto Color Emoji", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(40, 42, 54, 0.8); /* Dracula Background with Transparency */
+    color: #f8f8f2;
+    border-radius: 10px; /* Rounded corners for the whole bar */
+    border: 2px solid #bd93f9; /* Purple Border */
+}
+
+/* --- WORKSPACES --- */
+#workspaces {
+    background: transparent;
+    margin: 0 5px;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    color: #6272a4; /* Dracula Comment (Grayish Blue) */
+    background: transparent;
+}
+
+#workspaces button.active {
+    color: #ff79c6; /* Dracula Pink */
+    border-bottom: 2px solid #ff79c6;
+}
+
+/* --- CLOCK --- */
+#clock {
+    color: #8be9fd; /* Dracula Cyan */
+    margin: 0 10px;
+}
+
+/* --- RIGHT MODULES --- */
+#pulseaudio {
+    color: #f1fa8c; /* Dracula Yellow */
+    margin-right: 10px;
+}
+
+#backlight {
+    color: #ffb86c; /* Dracula Orange */
+    margin-right: 10px;
+}
+
+#bluetooth {
+    color: #bd93f9; /* Dracula Purple */
+    margin-right: 10px;
+}
+
+#network {
+    color: #50fa7b; /* Dracula Green */
+    margin-right: 15px;
+}
+
+#custom-power {
+    color: #ff5555; /* Dracula Red */
+    margin-right: 15px;
+    padding-left: 10px;
+}
+
+#battery {
+    color: #50fa7b; /* Green */
+    margin-right: 10px;
+}
+
+#battery.warning {
+    color: #ffb86c; /* Orange */
+}
+
+#battery.critical {
+    color: #ff5555; /* Red */
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        color: #ffffff;
+    }
+}
